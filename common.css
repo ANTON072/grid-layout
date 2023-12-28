@@ -19,6 +19,7 @@
 
 body {
   font: 1rem/1.5 var(--font-base);
+  padding: 2rem;
 }
 
 a {

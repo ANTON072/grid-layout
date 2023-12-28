@@ -1,0 +1,16 @@
+.card {
+  background: var(--color-blue);
+  color: var(--color-white);
+  padding: 1rem;
+  width: 20rem;
+  min-height: 5rem;
+
+  display: grid;
+  row-gap: 2rem;
+
+  a {
+    color: inherit;
+
+    justify-self: end;
+  }
+}
