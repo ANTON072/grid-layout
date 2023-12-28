@@ -1,0 +1,27 @@
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem 2.5rem;
+
+  li div {
+    background: var(--color-blue);
+    padding: 1rem;
+    color: var(--color-white);
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  li:after {
+    content: ">";
+    width: 2rem;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+.steps > li:nth-child(4n) {
+  grid-column-start: 1;
+}
