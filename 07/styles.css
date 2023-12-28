@@ -1,0 +1,37 @@
+.layout {
+  display: grid;
+  /* grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr 15%; */
+  grid-template:
+    ". ." auto
+    ". ." auto
+    ". ." 1fr /
+    1fr 15%;
+  column-gap: 5%;
+  min-height: 100vh;
+}
+
+.layout__header {
+  grid-area: 1 / 1 / auto / span 2;
+}
+
+.layout__hero {
+  background: skyblue;
+  font-size: 3rem;
+  font-weight: bold;
+
+  grid-area: 2 / 1 / auto / span 2;
+  padding-right: 15%;
+}
+
+.layout__nav {
+  background: lightpink;
+
+  grid-area: 2 / 2 / span 2;
+  margin-top: 40px;
+}
+
+main {
+  background: lightgreen;
+  padding: 2rem;
+}
