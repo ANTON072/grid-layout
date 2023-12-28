@@ -1,0 +1,33 @@
+.header {
+  background: #bbdefb;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1.5rem;
+}
+
+.header__list {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  column-gap: 0.3rem;
+  justify-self: end;
+  width: 100%;
+  max-width: 50rem;
+  height: 100%;
+
+  a {
+    text-decoration: none;
+    color: var(--color-white);
+    background: var(--color-blue);
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
