@@ -1,0 +1,13 @@
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 22%);
+  row-gap: 1.5rem;
+  column-gap: 4%;
+  justify-content: center;
+
+  li {
+    background: var(--color-blue);
+    padding: 1rem;
+    color: var(--color-white);
+  }
+}
