@@ -1,0 +1,34 @@
+/* prettier-ignore */
+.complex-grid {
+  display: grid;
+  grid-template:
+    'Alpha Beta   Beta' 80px
+    'Alpha     . Gamma' 80px
+    'Alpha Delta Gamma' auto /
+    40% 80px 1fr;
+  gap: 4px;
+}
+
+.complex-grid__alpha {
+  background: red;
+
+  grid-area: Alpha;
+}
+
+.complex-grid__beta {
+  background: green;
+
+  grid-area: Beta;
+}
+
+.complex-grid__gamma {
+  background: skyblue;
+
+  grid-area: Gamma;
+}
+
+.complex-grid__delta {
+  background: purple;
+
+  grid-area: Delta;
+}
